@@ -1,0 +1,42 @@
+.hidden {
+	display: none;
+}
+
+.layout-container {
+	background: url(images/mountain-road.jpg) no-repeat;
+	background-attachment: fixed;
+	background-position: center -360px;
+}
+
+.layout-container .mdl-layout__drawer-button {
+	/*color: white;*/
+	margin-top: 15px;
+}
+
+.mdl-layout__title a {
+	color: white;
+	text-decoration: none;
+}
+
+.page-content {
+	background: white;
+	width: 100%;
+	background: #fafafa;
+}
+
+.image-header-card > .mdl-card__title {
+	height: 176px;
+	color: #ffffff;
+}
+
+.services-header-image > .mdl-card__title {
+	background: url(images/Desert.jpg) center / cover;
+}
+
+.pricing-header-image > .mdl-card__title {
+	background: url(images/Lighthouse.jpg) center / cover;
+}
+
+.centered-text-card > .mdl-card__supporting-text, .centered-text-card > .mdl-card__actions {
+	text-align: center;
+}
