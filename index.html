@@ -25,7 +25,7 @@
 	</header>
 	
 	<!-- About Card -->
-	<a name="about"></a>
+	<a name="about" class="block-display"></a>
 	<div class="card">
 		<div class="card_title">
 			<h2>About</h2>
@@ -62,7 +62,7 @@
 	</div>
 	
 	<!-- Services Card -->
-	<a name="services"></a>
+	<a name="services" class="block-display"></a>
 	<div class="card">
 		<div class="card_title card_title-image card_title-image--services">
 			<h2>Services</h2>
@@ -73,7 +73,7 @@
 	</div>
 	
 	<!-- Prices Overview Card -->
-	<a name="pricing"></a>
+	<a name="pricing" class="block-display"></a>
 	<div class="card">
 		<div class="card_title card_title-image card_title-image--pricing">
 			<h2>Pricing</h2>
@@ -117,7 +117,7 @@
 	</div>
 	
 	<!-- Contact Info Card -->
-	<a name="contact"></a>
+	<a name="contact" class="block-display"></a>
 	<div class="card ">
 		<div class="card_title">
 			<h2>Contact</h2>
@@ -161,6 +161,23 @@
 					} else {
 						$(".scroll-helper").addClass("hidden");
 					}
+				}
+			});
+			
+			$(window).on("resize", function() {
+				 isMobile = $(document).width() < 600;
+				 isTablet = $(document).width() < 775;
+				 
+				if (isMobile) {
+					$("navigation").hide(0, function() {
+						$("navigation").addClass("nav-closed");
+						$(".menu-icon").css("background", "url(../images/menu.png) center / cover");
+					});
+				} else {
+					$("navigation").show(0, function() {
+						$("navigation").removeClass("nav-closed");
+						$(".menu-icon").addClass("hidden");
+					});
 				}
 			});
 		});

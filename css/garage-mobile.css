@@ -26,6 +26,10 @@ body {
 	display: none;
 }
 
+.block-display {
+	display: block;
+}
+
 @media (max-width: 599px) {
 	/**
 	 * Header and navigation styling 
