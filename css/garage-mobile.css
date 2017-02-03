@@ -51,6 +51,10 @@ body {
 		font-weight: 500;	
 	}
 	
+	.header-title a {
+		color: white;
+	}
+	
 	.menu-icon {
 		display: block;
 		float: right;
@@ -96,6 +100,7 @@ body {
 		box-shadow: 2px 2px 5px;
 		text-transform: uppercase;
 		border-width: 0;
+		cursor: pointer;
 	}
 	
 	.scroll-helper {
