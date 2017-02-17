@@ -124,4 +124,30 @@
 		box-shadow: none;
 		background: transparent;
 	}
+
+	.input {
+		margin-bottom: 15px;
+		margin-right: 15px;
+	}
+	
+	.memberLevel-container {
+		display: inline-block;
+		width: 150px;
+		height: 150px;
+		text-align: center;
+		color: white;
+		border-radius: 10px;
+	}
+	
+	.memberLevel-container:nth-child(2) {
+		background: #caa05b;
+	}
+	
+	.memberLevel-container:nth-child(3) {
+		background: #ccccc5;
+	}
+	
+	.memberLevel-container:nth-child(4) {
+		background: #FFC107;
+	}
 }

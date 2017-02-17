@@ -22,7 +22,17 @@
 			<h2>Login</h2>
 		</div>
 		<div class="card_content">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis fermentum diam. Vivamus et arcu pellentesque lectus cursus congue et non risus. Nullam gravida arcu leo, sed hendrerit enim dapibus at. Curabitur eu sapien vitae erat efficitur fringilla. In eu tempor magna, nec interdum urna. Duis vestibulum turpis lacus, non imperdiet eros lacinia non. Cras congue nisl a leo sollicitudin iaculis. Mauris placerat, metus eget mattis condimentum, purus lectus ullamcorper quam, nec tristique nulla est tincidunt mi. Sed volutpat volutpat nulla et ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque rutrum, neque nec mollis vulputate, sem diam mollis nibh, vitae dapibus libero felis vel sapien. Suspendisse elementum lorem quis odio pharetra, in vehicula orci iaculis. Proin hendrerit magna at odio semper placerat. Donec magna augue, dignissim ut turpis eget, vestibulum varius sem. Nulla enim ex, sagittis non tincidunt gravida, fringilla et leo. Proin euismod massa in lacus faucibus, in rhoncus libero fermentum.
+			<form>
+				<div class="input">
+					<label for="username">Username</label>
+					<input type="email" name="username" autofocus/>
+				</div>
+				<div class="input">
+					<label for="password">Password</label>
+					<input type="password" name="password"/>
+				</div>
+				<a href="#" class="navigation-link raised-button">Login</a>
+			</form>
 		</div>
 	</div>
 	
@@ -32,7 +42,110 @@
 			<h2>Create Account</h2>
 		</div>
 		<div class="card_content">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis fermentum diam. Vivamus et arcu pellentesque lectus cursus congue et non risus. Nullam gravida arcu leo, sed hendrerit enim dapibus at. Curabitur eu sapien vitae erat efficitur fringilla. In eu tempor magna, nec interdum urna. Duis vestibulum turpis lacus, non imperdiet eros lacinia non. Cras congue nisl a leo sollicitudin iaculis. Mauris placerat, metus eget mattis condimentum, purus lectus ullamcorper quam, nec tristique nulla est tincidunt mi. Sed volutpat volutpat nulla et ultrices. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque rutrum, neque nec mollis vulputate, sem diam mollis nibh, vitae dapibus libero felis vel sapien. Suspendisse elementum lorem quis odio pharetra, in vehicula orci iaculis. Proin hendrerit magna at odio semper placerat. Donec magna augue, dignissim ut turpis eget, vestibulum varius sem. Nulla enim ex, sagittis non tincidunt gravida, fringilla et leo. Proin euismod massa in lacus faucibus, in rhoncus libero fermentum.
+			<form>
+				<div class="input">
+					<label for="fname">First Name</label>
+					<input type="text" name="fname" pattern="[A-z]*"/>
+				</div>
+				<div class="input">
+					<label for="lname">Last Name</label>
+					<input type="text" name="lname" pattern="[A-z]*"/>
+				</div>
+				<br>
+				<div class="input">
+					<label for="address1">Address Line 1</label>
+					<input type="text" name="address1"/>
+				</div>
+				<br>
+				<div class="input">
+					<label for="address2">Address Line 2</label>
+					<input type="text" name="address2"/>
+				</div>
+				<br>
+				<div class="input">
+					<label for="city">City</label>
+					<input type="text" name="city" pattern="[A-z]*"/>
+				</div>
+				<div class="input">
+					<label for="state">State</label>
+					<select name="state">
+						<option></option>
+						<option>MO</option>
+					</select>
+				</div>
+				<div class="input">
+					<label for="zip">Zip</label>
+					<input type="number" name="zip" pattern="[0-9]*"/>
+				</div>
+				<hr>
+				<div class="input memberLevels">
+					<label for="memberLevel">Membership Level</label>
+					<div name="memberLevel" class="memberLevel-container">
+						<div class="memberLevel-title">Bronze</div>
+						<div class="memberLevel-price">$35 <span>monthly</span></div>
+					</div>
+					<div name="memberLevel" class="memberLevel-container">
+						<div class="memberLevel-title">Silver</div>
+						<div class="memberLevel-price">$50 <span>monthly</span></div>
+					</div>
+					<div name="memberLevel" class="memberLevel-container">
+						<div class="memberLevel-title">Gold</div>
+						<div class="memberLevel-price">$75 <span>monthly</span></div>
+					</div>
+				</div>
+				<br>
+				<div class="input">
+					<label for="shirtSize">Shirt Size</label>
+					<select name="shirtSize">
+						<option></option>
+						<option>Extra Small</option>
+						<option>Small</option>
+						<option>Medium</option>
+						<option>Large</option>
+						<option>Extra Large</option>
+						<option>2 Extra Large</option>
+						<option>3 Extra Large</option>
+					</select>
+				</div>
+				<hr>
+				<div class="input">
+					<label for="username">Username</label>
+					<input type="email" name="username"/>
+				</div>
+				<div class="input">
+					<label for="password">Password</label>
+					<input type="password" name="password"/>
+				</div>
+				<hr>
+				<div class="input">
+					<label for="ccNum">Credit Card Number</label>
+					<input type="number" name="ccNum" pattern="[0-9]*"/>
+				</div>
+				<br>
+				<div class="input">
+					<label for="expDate">Expiration Date</label>
+					<select name="expDate">
+						<option></option>
+						<option>01 - January</option>
+						<option>02 - February</option>
+						<option>03 - March</option>
+						<option>04 - April</option>
+						<option>05 - May</option>
+						<option>06 - June</option>
+						<option>07 - July</option>
+						<option>08 - August</option>
+						<option>09 - September</option>
+						<option>10 - October</option>
+						<option>11 - November</option>
+						<option>12 - December</option>
+					</select>
+				</div>
+				<div class="input">
+					<label for="secCode">Security Code</label>
+					<input type="number" name="secCode" pattern="[0-9]*"/>
+				</div>
+				<a href="#" class="navigation-link raised-button">Register</a>
+			</form>
 		</div>
 	</div>
 	

@@ -30,6 +30,31 @@ body {
 	display: block;
 }
 
+/* Input styling */
+.input {
+	display: inline-block;
+}
+
+.input  label {
+	display: block;
+}
+
+.input input {
+	border: 0;
+	border-bottom: 2px solid #aaaaaa;
+	outline: none;
+	padding: 2px;
+	transition: border-bottom 1s;
+}
+
+.input input:focus {
+	border-bottom: 2px solid #ffab40;
+}
+
+.input input:not(:focus):invalid {
+	color: red;
+}
+
 @media (max-width: 599px) {
 	/**
 	 * Header and navigation styling 
